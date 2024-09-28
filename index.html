@@ -6,30 +6,34 @@
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="css/styles.css" />
-    <title>AI Joke Generator</title>
+    <title>AI Joke & Poem Generator</title>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>🤣 AI Joke Generator 😜</h1>
+            <h1>AI Joke & Poem Generator✍🏻</h1>
         </header>
 
         <main>
             <div class="form-container">
-                <form id="joke-generator-form">
+                <form id="generator-form">
+                    <select id="content-type" required>
+                        <option value="" disabled selected>Select a type</option>
+                        <option value="joke">Joke🤣</option>
+                        <option value="poem">Poem✍🏻</option>
+                    </select>
                     <input type="text" 
-                        placeholder="Enter the joke topic" 
-                        autofocus 
+                        placeholder="Enter the topic" 
                         required 
                         autocomplete="off" 
                         class="instructions"
                         id="user-instructions" />
-                    <small class="hint">i.e. animals, food, technology...</small> 
-                    <input type="submit" class="submit-button" />
+                    <small class="hint">i.e. animals, sunshine, food...</small> 
+                    <input type="submit" class="submit-button" value="Generate" />
                 </form>
             </div>
 
-            <div class="joke hidden" id="joke"></div>
+            <div class="hidden" id="result"></div>
         </main>
 
         <footer>
