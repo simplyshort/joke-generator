@@ -12,6 +12,7 @@ a {
     max-width: 600px;
 }
 
+
 header {
     margin-bottom: 30px;
 }
@@ -25,22 +26,29 @@ h1 {
 }
 
 form {
+    display: flex;
     padding: 30px;
     background-color: white;
     box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08) ;
     border-radius: 10px;
     display: flex;
     margin-bottom: 30px;
+
+}
+
+.form-container {
+    position: relative;
 }
 
 .instructions {
     padding: 10px;
     border: 1px solid rgba(39, 33, 66, 0.5);
-    width: 80%;
+    width: 100%;
     font-size: 16px;
     border-radius: 50px;
     line-height: 20px;
     color: #272044;
+    position: relative;
 }
 
 .submit-button {
@@ -54,9 +62,27 @@ form {
     padding: 14px 24px;
 }
 
+.hidden {
+    display: none;
+    margin-top: 5px;
+    color: #6c757d;
+
+}
+
+.hint {
+    position: absolute;
+    bottom: 10px; 
+    left: 20px; 
+    font-size: 0.85rem;
+    color: #6c757d;
+}
+
+
+
 .poem {
     font-size: 14px;
     background-color: white;
+    display: block;
     padding: 20px;
     line-height: 2;
     border-left: 3px solid #885df1;

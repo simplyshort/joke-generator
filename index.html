@@ -11,27 +11,37 @@
 <body>
     <div class="container">
         <header>
-            <h1> AI Poem Generator</h1>
+            <h1>AI Poem Generator</h1>
         </header>
 
         <main>
-            <form id="poem-generator-form">
-                <input type="text" 
-                placeholder="Enter the topic of the poem" 
-                autofocus 
-                required 
-                autocomplete="off" 
-                class="instructions"
-                id="user-instructions"
-                />
-                <input type="submit" class="submit-button" />
-            </form>
-                <div class="poem" id="poem"></div>
-    </div>
+            <div class="form-container">
+                <form id="poem-generator-form">
+                    <input type="text" 
+                        placeholder="Enter the topic of choice" 
+                        autofocus 
+                        required 
+                        autocomplete="off" 
+                        class="instructions"
+                        id="user-instructions" />
+                    <small class="hint">i.e. flowers, sunshine, chocolate...</small> 
+                    <input type="submit" class="submit-button" />
+                </form>
+            </div>
+
+            <div class="poem hidden" id="poem"></div>
         </main>
-    <footer>
-        This AI project was coded by <a href="https://github.com/simplyshort" target="_blank">Cassy Geroulis</a> and is <a href="https://github.com/simplyshort/joke-generator" targe="_blank">open-sourced on GitHub</a> and is hosted on <a href="https://joke-poem-generator.netlify.app/" targe="_blank">Netlify</a>
-    </footer>
+
+        <footer>
+            This AI project was coded by 
+            <a href="https://github.com/simplyshort" target="_blank">Cassy Geroulis</a> 
+            and is 
+            <a href="https://github.com/simplyshort/joke-generator" target="_blank">open-sourced on GitHub</a> 
+            and is hosted on 
+            <a href="https://joke-poem-generator.netlify.app/" target="_blank">Netlify</a>.
+        </footer>
+    </div>
+
     <script src="javascript/index.js"></script>
 </body>
 </html>
