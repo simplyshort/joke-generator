@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="css/styles.css" />
     <title>AI Poem Generator</title>
 </head>
@@ -14,7 +14,7 @@
         </header>
 
         <main>
-            <form>
+            <form id="poem-generator-form">
                 <input type="text" 
                 placeholder="Enter the topic of the poem" 
                 autofocus 
@@ -23,15 +23,11 @@
                 class="instructions"/>
                 <input type="submit" class="submit-button" />
             </form>
-                <div class="poem"> 
-                    As a quiet little seedling
-                    <br />
-                    Lay within its darksome bed.
-                </div>
+                <div class="poem" id="poem"></div>
     </div>
         </main>
     <footer>
-        This AI project was coded by <a href="https://github.com/simplyshort" target="_blank">Cassy Geroulis</a> and is <a href="https://github.com/simplyshort/joke-generator" targe="_blank">open-sourced on GitHub</a> and is hosted on Netlify.
+        This AI project was coded by <a href="https://github.com/simplyshort" target="_blank">Cassy Geroulis</a> and is <a href="https://github.com/simplyshort/joke-generator" targe="_blank">open-sourced on GitHub</a> and is hosted on <a href="https://joke-poem-generator.netlify.app/" targe="_blank">Netlify</a>
     </footer>
     <script src="javascript/index.js"></script>
 </body>
